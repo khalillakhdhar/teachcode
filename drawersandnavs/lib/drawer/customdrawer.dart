@@ -28,18 +28,25 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.pageview),
-            title: Text('Page 1'),
+            title: Text('IMC'),
             onTap: () {
               Navigator.pushNamed(context, '/page1');
             },
           ),
           ListTile(
             leading: Icon(Icons.pages),
-            title: Text('Page 2'),
+            title: Text('Liste des produits'),
             onTap: () {
               Navigator.pushNamed(context, '/page2');
             },
           ),
+          ListTile(
+            leading: Icon(Icons.pages),
+            title: Text('Ajout des produits'),
+            onTap: () {
+              Navigator.pushNamed(context, '/products');
+            },
+          )
         ],
       ),
     );
